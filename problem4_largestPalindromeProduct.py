@@ -6,7 +6,7 @@ A palindromic number reads the same both ways. The largest palindrome made from 
 Find the largest palindrome made from the product of two 3-digit numbers.
 '''
 
-
+#check if number is palindromic or not
 def checkPalindromic(number):
     tmp = [int(n) for n in str(number)]
     for i in range(0, len(tmp) // 2):
@@ -14,6 +14,7 @@ def checkPalindromic(number):
             return False
     return True
 
+#find the largest palindromic number of n-digit
 def findLargestPalindromic(digit):
     n = 10 ** digit - 1
     tmp = 0
