@@ -7,7 +7,7 @@ answer: 6857
 
 import math
 
-#check if number is prime or not
+#check if @number is prime or not
 def isPrime(number):
     if number <= 1:
         return False
@@ -16,7 +16,7 @@ def isPrime(number):
             return False
     return True
 
-#retunr all prime factors of number
+#retunr all prime factors of @number
 def prime_factors(number):
     tmp = []
     for i in range(2, int(math.sqrt(number)) + 1):
@@ -25,7 +25,7 @@ def prime_factors(number):
                 tmp.append(i)
     return tmp
 
-#return the largest prime factor of number
+#return the largest prime factor of @number
 def largest_prime_factor(number):
     n = prime_factors(number)
     return n[len(n) - 1]
