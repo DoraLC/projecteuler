@@ -33,11 +33,14 @@ def CollatzSeq(Seq=[], n=1):
     else:
         return CollatzSeq(Seq, ifOdd(n))
 
-term = 0
-leng = 0
-for i in range(1, 1000000):
-    tmp = CollatzSeq(Seq=[],n=i)
-    if len(tmp) > leng:
-        leng = len(tmp)
-        term = i
-print(term)
+def solution(n=1000000):
+    term = 0
+    leng = 0
+    for i in range(1, n):
+        tmp = CollatzSeq(Seq=[],n=i)
+        if len(tmp) > leng:
+            leng = len(tmp)
+            term = i
+    print(term)
+
+solution()
