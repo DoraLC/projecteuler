@@ -19,7 +19,7 @@ def isLeapYr(year):
         if year % 100 != 0:
             return True
         else:
-            if year % 100 == 0 and year % 400 == 0:
+            if year % 400 == 0:
                 return True
     return False
 
@@ -30,11 +30,12 @@ def months(leapYr):
         return[31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
 times = 0
-week = 1
+week = 0
 for year in range(1901, 2001):
     for month in months(isLeapYr(year)):
         if (month - week) % 7 == 0:
             times += 1
         week += month % 7
+        week = week % 7
     
 print(times)
