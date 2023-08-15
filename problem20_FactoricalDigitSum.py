@@ -9,10 +9,14 @@ Find the sum of the digits in the number 100!.
 answer: 648
 '''
 
-def factorial(n):
+def factorial(n, dict):
+    if n in dict:
+        return dict[n]
     if n == 0 or n == 1:
         return 1
-    return n * factorial(n - 1)
+    rtn = n * factorial(n - 1, dict)
+    dict[n] = rtn
+    return rtn
 
 def sum_of_dig(n):
     arr = str(n)
@@ -21,4 +25,4 @@ def sum_of_dig(n):
         rtn += int(each)
     return rtn
 
-print(sum_of_dig(factorial(100)))
+print(sum_of_dig(factorial(100, {})))

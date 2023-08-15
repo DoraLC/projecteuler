@@ -10,11 +10,14 @@ find the sum of the even-valued terms.
 answer: 4613732
 '''
 
-def fib(n):
+def fib(n, dict={}):
+    if n in dict:
+        return dict[n]
     if n <= 2:
         return n
-    else:
-        return fib(n - 1) + fib(n - 2)
+    rtn = fib(n - 1, dict) + fib(n - 2, dict)
+    dict[n] = rtn
+    return rtn
 
 sum = 0
 term = 2
