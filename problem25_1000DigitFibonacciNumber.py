@@ -20,6 +20,8 @@ F(12) = 144
 
 The 12th term, F(12) is the first term to contain three digits. 
 What is the index of the first term in the Fibonacci sequence to contain 1000 digits?
+
+answer: 4782
 '''
 
 def fibonacci(n, dict={1:1, 2:1}):
