@@ -47,4 +47,5 @@ def nCr(n, r):
 def solution(num):
     return nCr(num * 2, num)
 
-print(solution(20))
+if __name__ == '__main__':
+    print(solution(20))

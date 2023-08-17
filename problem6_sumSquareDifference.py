@@ -30,4 +30,5 @@ def sum_of_squaresNumbers(n):
 def diff_sumSqrt_sumSqrtNum(n):
     return sum_of_squaresNumbers(n) - sum_of_squares(n)
 
-print(diff_sumSqrt_sumSqrtNum(100))
+if __name__ == '__main__':
+    print(diff_sumSqrt_sumSqrtNum(100))

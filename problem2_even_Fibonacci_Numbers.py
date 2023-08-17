@@ -19,14 +19,15 @@ def fib(n, dict={}):
     dict[n] = rtn
     return rtn
 
-sum = 0
-term = 2
+if __name__ == '__main__':
+    sum = 0
+    term = 2
 
-while True:
-    tmp = fib(term)
-    if tmp >= 4000000: break
-    if tmp % 2 == 0:
-        sum += tmp
-    term += 3 # the (2+3n)th term is even for n = 0, 1, 2, ...
-    
-print(sum)
+    while True:
+        tmp = fib(term)
+        if tmp >= 4000000: break
+        if tmp % 2 == 0:
+            sum += tmp
+        term += 3 # the (2+3n)th term is even for n = 0, 1, 2, ...
+        
+    print(sum)

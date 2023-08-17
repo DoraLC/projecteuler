@@ -17,4 +17,5 @@ def smallestMultiple(number):
             return q
         q += 1
 
-print(smallestMultiple(20))
+if __name__ == '__main__':
+    print(smallestMultiple(20))

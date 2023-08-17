@@ -43,4 +43,5 @@ def solution(n=1000000):
             term = i
     print(term)
 
-solution()
+if __name__ == '__main__':
+    solution()

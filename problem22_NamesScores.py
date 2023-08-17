@@ -25,14 +25,16 @@ def worth(name):
         rtn += letter_score[letter]
     return rtn
 
-names_list = names.read().split(',')
-names.close()
-names_list.sort()
-
 def solution(names):
     rtn = 0
     for i in range(len(names)):
         rtn += worth(names[i]) * (i + 1)
     return rtn
 
-print(solution(names_list))
+if __name__ == '__main__':
+
+    names_list = names.read().split(',')
+    names.close()
+    names_list.sort()
+
+    print(solution(names_list))

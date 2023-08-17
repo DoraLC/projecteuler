@@ -40,4 +40,6 @@ def solution(n):
         for i in each:
             rtn += i
     return rtn
-print(solution(10000))
+
+if __name__ == '__main__':
+    print(solution(10000))

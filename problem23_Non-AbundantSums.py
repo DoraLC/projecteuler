@@ -29,17 +29,21 @@ def abundant(n):
         return True
     return False
 
-abundant_list = [i for i in range(12, 28123) if abundant(i)]
+def solution():
+    abundant_list = [i for i in range(12, 28123) if abundant(i)]
 
-#non_abundant = [i for i in range(1, 28123) if not abundant(i)]
+    #non_abundant = [i for i in range(1, 28123) if not abundant(i)]
 
-abundant_pair = []
-for i in abundant_list:
-    for j in abundant_list:
-        _sum = i + j
-        if _sum > 28123:
-            break
-        abundant_pair.append(_sum)
+    abundant_pair = []
+    for i in abundant_list:
+        for j in abundant_list:
+            _sum = i + j
+            if _sum > 28123:
+                break
+            abundant_pair.append(_sum)
 
-target = set(range(1, 28124)) - set(abundant_pair)
-print(sum(target))
+    target = set(range(1, 28124)) - set(abundant_pair)
+    print(sum(target))
+
+if __name__ == '__main__':
+    solution()

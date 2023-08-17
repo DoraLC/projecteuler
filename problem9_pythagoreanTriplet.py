@@ -31,4 +31,5 @@ def answer(numsum):
         if sum(each) == numsum:
             return [each, each[0] * each[1] * each[2]]
         
-print(answer(1000))
+if __name__ == '__main__':
+    print(answer(1000))

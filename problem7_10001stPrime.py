@@ -17,13 +17,15 @@ def isPrime(n):
             return False
     return True
 
-count = 0
-number = 0
 
-while True:
-    if isPrime(number):
-        count += 1
-        if count == 10001:
-            print(number)
-            break
-    number += 1
+if __name__ == '__main__':
+    count = 0
+    number = 0
+
+    while True:
+        if isPrime(number):
+            count += 1
+            if count == 10001:
+                print(number)
+                break
+        number += 1

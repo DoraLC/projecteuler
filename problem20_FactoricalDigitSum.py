@@ -25,4 +25,5 @@ def sum_of_dig(n):
         rtn += int(each)
     return rtn
 
-print(sum_of_dig(factorial(100, {})))
+if __name__ == '__main__':
+    print(sum_of_dig(factorial(100, {})))

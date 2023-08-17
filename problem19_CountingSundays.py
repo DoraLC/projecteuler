@@ -29,13 +29,17 @@ def months(leapYr):
     else:
         return[31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
-times = 0
-week = 0
-for year in range(1901, 2001):
-    for month in months(isLeapYr(year)):
-        if (month - week) % 7 == 0:
-            times += 1
-        week += month % 7
-        week = week % 7
-    
-print(times)
+def solution():
+    times = 0
+    week = 0
+    for year in range(1901, 2001):
+        for month in months(isLeapYr(year)):
+            if (month - week) % 7 == 0:
+                times += 1
+            week += month % 7
+            week = week % 7
+        
+    print(times)
+
+if __name__ == '__main__':
+    solution()

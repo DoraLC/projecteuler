@@ -28,5 +28,6 @@ def sum_of_as(FirstTerm, diff, number_of_terms):
 def answer2():
     return sum_of_as(3, 3, 333) + sum_of_as(5, 5, 199) - sum_of_as(15, 15, 66)
 
-answer1()
-print(answer2())
+if __name__ == '__main__':
+    answer1()
+    print(answer2())

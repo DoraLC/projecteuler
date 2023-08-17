@@ -76,3 +76,5 @@ def solution(start, end):
         tmp += len(numRepre(i))
     return tmp
 
+if __name__ == '__main__':
+    print(solution())

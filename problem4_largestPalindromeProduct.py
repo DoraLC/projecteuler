@@ -4,6 +4,8 @@ A palindromic number reads the same both ways. The largest palindrome made from 
 9009 = 91 * 99
 
 Find the largest palindrome made from the product of two 3-digit numbers.
+
+answer: 906609
 '''
 
 #check if @number is palindromic or not
@@ -25,4 +27,5 @@ def findLargestPalindromic(digit):
                 tmp = k
     return tmp
 
-print(findLargestPalindromic(3))
+if __name__ == '__main__':
+    print(findLargestPalindromic(3))

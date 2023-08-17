@@ -23,4 +23,5 @@ def sum_of_primes(n):
             rtn += i
     return rtn
 
-print(sum_of_primes(2000000))
+if __name__ == '__main__':
+    print(sum_of_primes(2000000))

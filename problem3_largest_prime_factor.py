@@ -30,7 +30,8 @@ def largest_prime_factor(number):
     n = prime_factors(number)
     return n[len(n) - 1]
 
-#check example
-print(largest_prime_factor(13195))
+if __name__ == '__main__':
+    #check example
+    print(largest_prime_factor(13195))
 
-print(largest_prime_factor(600851475143))
+    print(largest_prime_factor(600851475143))
