@@ -26,10 +26,10 @@ def permutation(str):
 
     return rtn
 
-def solution(dig=digits, pos=999999):
+def solution(dig=digits, pos=1000000):
     tmp = permutation(dig)
     tmp.sort()
-    print(tmp[pos])
+    print(tmp[pos - 1])
 
 if __name__ == '__main__':
     solution()
